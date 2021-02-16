@@ -23,6 +23,9 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="assets/css/style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    </head>
 
    <body>
@@ -82,11 +85,11 @@
     </header>
      <!-- Merchent section start -->
      <div class="container">
-        <div><h1 id="header-greating">We are happy to have you join us</h1></div>
-        <div class="row col-5" id="header-greating-text"><p>Before you can begin taking orders, we will need some information about you and your business</p></div>
+        <div class="row col-12"><h1 id="header-greating">We are happy to have you join us</h1></div>
+        <div class="row col-lg-5 col-md-6 col-sm-8" id="header-greating-text"><p>Before you can begin taking orders, we will need some information about you and your business</p></div>
         <div id="header-greating-text"><p>Please fill the form below</p></div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-7 col-md-6 col-sm-12">
                 <form>
                     <div class="form-row">
                         <div class="form-group" id="input-feilds" >
@@ -117,47 +120,32 @@
                     <div class="form-row">
                         <div class="form-group" id="input-feilds">
                             <label>Outlet type</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="cloud-kitchen" id="exampleRadios1" value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                  Cloud kitchen
-                                </label>
+                            <div class="radio">
+                                <label ><input type="radio" name="cloudKitchen" > Cloud kitchen</label>
                               </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="restaurant" id="exampleRadios2" value="option2">
-                                <label class="form-check-label" for="exampleRadios2">
-                                    Restaurant
-                                </label>
-                              </div> 
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tiffin-center" id="exampleRadios3" value="option3">
-                                <label class="form-check-label" for="exampleRadios3">
-                                    Tiffin Center
-                                </label>
-                              </div> 
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="home-kitchen" id="exampleRadios4" value="option4">
-                                <label class="form-check-label" for="exampleRadios4">
-                                    Home kitchen
-                                </label>
-                              </div> 
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
-                                <label class="form-check-label" for="exampleRadios5">
-                                    others 
-                                </label>
-                                <input type="text" class="form-control shadow" id="exampleRadios5" placeholder="Please specify">
-                              </div>  
-                            </div>
-                        </div>                       
-                        <div class="form-row">
+                              <div class="radio">
+                                <label ><input type="radio" name="Restaurant"> Restaurant</label>
+                              </div>
+                              <div class="radio ">
+                                <label ><input type="radio" name="Tiffincenter" > Tiffin Center</label>
+                              </div>
+                              <div class="radio ">
+                                <label ><input type="radio" name="homekitchen" > Home kitchen</label>
+                              </div>   
+                              <div class="radio">
+                                <label ><input type="radio" name="others" > Others</label>
+                                <input type="text" class="form-control shadow" placeholder="Please specify">
+                            </div>   
+                        </div>
+                    </div>                       
+                    <div class="form-row">
                             <div class="form-group" id="input-feilds" >
                                 <label for="contactperson">Contact person</label>
-                                <input type="name" class="form-control shadow" id="contactperson" placeholder="Owner/Manager" required>
-                              </div>
+                                <input type="name" class=" form-control shadow" id="contactperson" placeholder="Owner/Manager" required>
+                            </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group" id="input-feilds">
+                    <div class="form-row">
+                           <div class="form-group" id="input-feilds">
                               <label for="name1">Name</label>
                               <input type="name" class="form-control shadow" id="name1" placeholder="name" required>
                             </div>
@@ -177,20 +165,20 @@
                             <div class="form-group" id="input-feilds">
                                 <label>services</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Delivery" id="exampleRadios11" value="option1" checked>
-                                    <label class="form-check-label" for="exampleRadios11">
+                                    <input class="form-check-input" type="radio" name="Delivery" id="exampleRadios11" value="option1" >
+                                    <label class="form-check-label" for="exampleRadios11" style="font-size: 14px;">
                                       Delivery
                                     </label>
                                   </div>
                                   <div class="form-check">
                                     <input class="form-check-input" type="radio" name="pickup" id="exampleRadios22" value="option2">
-                                    <label class="form-check-label" for="exampleRadios22">
+                                    <label class="form-check-label" for="exampleRadios22" style="font-size: 14px;">
                                         Pick up
                                     </label>
                                   </div> 
                                   <div class="form-check">
                                     <input class="form-check-input" type="radio" name="both" id="exampleRadios33" value="option3">
-                                    <label class="form-check-label" for="exampleRadios33">
+                                    <label class="form-check-label" for="exampleRadios33" style="font-size: 14px;">
                                         Both
                                     </label>
                                   </div>  
@@ -205,41 +193,45 @@
                         <div class="form-row">
                             <div class="form-group" id="input-feilds" >
                               <label >Upload Menu</label>
-                              <p>Upload a clear image of the menu with the prices visible in .jpg or .png format</p>
-                              <div class="custom-file">
-                                  <input type="file" class="custom-file-input" id="customFile1">
+                              <p style="font-size: 11px;" >Upload a clear image of the menu with the prices visible in .jpg or .png format</p>
+                               <div class="custom-file mb-3">
+                                  <input type="file" class="custom-file-input" id="customFile1" required style="width: 457px;">
                                   <label class="custom-file-label" for="customFile1">Choose file</label>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group" id="input-feilds" >
                                 <label>Upload License</label>
-                                <p>Please upload all the license images for verification as a single pdf or as seperate images</p>
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input" id="customFile2">
+                                <p style="font-size: 11px;">Please upload all the license images for verification as a single pdf or as seperate images</p>
+                                <div class="custom-file mb-3">
+                                  <input type="file" class="custom-file-input" id="customFile2" required style="min-width:200px">
                                   <label class="custom-file-label" for="customFile2">Choose file</label>
                                 </div>
-                            <div class="form-group" id="input-feilds" >
+                                
+                             </div>
                         </div>
-                        <div class="form-row" style="width: 200px;">
+                        <div class="form-row" >
                           <div class="form-group">
-                           <button type="button" class="btn btn-dark" type="submit" style="padding-bottom: 15px;padding-top: 15px;margin-top: 20px; margin-bottom: 20px; border-radius:8px">
-                             <i class="fa fa-paper-plane"></i> submit
+                           <button type="button" class="btn btn-dark" type="submit" style="padding-bottom: 15px;padding-top: 15px;margin: 20px; border-radius:10px">
+                             <i class="fa fa-paper-plane"></i> SUBMIT
                            </button>
-                          </div>
+                           </div>
+                           <div class="form-group">
+                           <button type="button" class="btn btn-dark" type="reset" style="padding-bottom: 15px;padding-top: 15px;margin: 20px; border-radius:10px">
+                             <i class="fas fa-undo-alt"></i> RESET
+                           </button>
+                           </div>
                        </div>
                   </form>
-            </div>
-        </div>
-     </div>
-            
-            <div class="col-6 w3-hide-small w3-hide-medium" >
+            </div>            
+            <div class="col-5 w3-hide-small w3-hide-medium" >
                <img src="assets/img/background/rafiki.svg" style="width:90% " alt="" >
             </div>
         </div>
-        </div>
-     </div>
+    </div>
+       
      <!-- Merchent section end -->
 
     <footer>
@@ -373,7 +365,14 @@
 
 
   <!-- JS here -->
-	
+        <script>
+        // Add the following code if you want the name of the file appear on select
+         $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+         });
+        </script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		<!-- Jquery, Popper, Bootstrap -->
