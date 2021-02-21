@@ -42,25 +42,20 @@
                         <div class="col-lg-9 col-md-9">
                             <div class="menu-wrapper">
                                 <!-- Main-menu -->
-                                <div class="main-menu" id="main-box">
-                                    <nav class="d-none d-lg-block text-center">
-                                        <ul id="navigation" style="text-align: center;">
-                                            <li><a href="index.html" style="font-size: normal;font-weight:550;padding-right: 0px;">HOME</a></li>
-                                            <li><a href="about.html" style="font-size: normal;font-weight:550;padding-right: 0px;">ABOUT US</a></li>
-                                            <li><a href="form.html" style="font-size: normal;font-weight: 550;padding-right: 0px;">PARTNERSHIP WITH US</a></li>
-                                            <li class=" w3-hide-large text-center" style="display:inline-block">
-                                            <div class="row text-center">
-                                            <div class="col-6"><a href="sign/index.html" class="btn  shadow head-btn1" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px;width:100px; color:#fffdfd">REGISTER</a></div>
-                                            <div class="col-6"><a href="sign/index.html" class="btn shadow head-btn2" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px;width:100px;">LOGIN</a></div>
-                                            </div></li>
+                                <div class="main-menu"id="main-box">
+                                    <nav class="d-none d-lg-block">
+                                        <ul id="navigation" id="main-box-menue">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="form.html">Partnership With us</a></li>
                                         </ul>
                                     </nav>
                                 </div>          
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
                                     
-                                    <a href="sign/index.html" class="btn  shadow head-btn1" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px;">REGISTER</a>
-                                    <a href="sign/index.html" class="btn shadow head-btn2" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px;">LOGIN</a>
+                                    <a href="sign/index.html" class="btn  shadow head-btn1" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px;">Register</a>
+                                    <a href="sign/index.html" class="btn shadow head-btn2" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px;">Login</a>
                                 </div>
                             </div>
                         </div>
@@ -75,90 +70,20 @@
         <!-- Header End -->
     </header>
     <main>
-        <div class="container w3-hide-small w3-hide-medium">
-            <div class="row ">
-                <div class="col-3  shadow p-3 mb-5 bg-white rounded" id="top-tabs">
-                   <img src="assets/img/background/tiffin.png">
-                   <div class="card-img-overlay"><b style="font-size: larger;font-weight:750;">TIFFINS</b><br>
-                    <span style="font-size: 2em; color: rgb(0, 225, 255); padding-right: 20px;"><i class="fas fa-arrow-alt-circle-right"></i></span>
-                   </div>
-                </div>
-                <div class="col-3  shadow p-3 mb-5 bg-white rounded" id="top-tabs">
-                    <b style="font-size: larger;font-weight:700;">MORE <br> CATEGORY COMING SOON</b>         
-                </div>
-            </div>
-
-        </div>
-
-        <!-- slider Area Start-->
-        <div class="slider-area ">
-            <!-- Mobile Menu -->
-            <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/bg.png" style="opacity: 0.2;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-9 col-md-10">
-                                <div class="hero__caption">
-                                    <div class="row time middle" style="margin:10px">
-                                        <span style="height: 100px;width: 70px; color:white">
-                                        <h2>
-                                          <div id="d" style="color:white">20</div>
-                                        </h2>
-                                          Days
-                                        
-                                        </span>
-                                        <span style="height: 100px;width: 70px; color:white">
-                                          <h2>
-                                          <div id="h" style="color:white">06</div>
-                                          </h2>
-                                          Hours
-                                        </span>
-                                        <span style="height: 100px;width: 70px; color:white">
-                                          <h2>
-                                          <div id="m" style="color:white">35</div>
-                                          </h2>
-                                          Minutes
-                                        </span>
-                                        <span style="height: 100px;width: 70px; color:white">
-                                          <h2>
-                                          <div id="s" style="color:white">54</div></h2>
-                                          Seconds
-                                          
-                                        </span>
-                                      </div>
-                                      <script src="countdown.js"></script>
-                                    <h1 style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">We Are Launching Soon</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Search Box -->
-                        <div class="row">
-                            <div class="col-xl-8">
-                                <!-- form -->
-                                <form action="#" class="search-box">
-                                    
-                                    <!-- <div class="search-form">
-                                        <a href="form.html">ADD</a>
-                                    </div>	 -->
-                                </form>	
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="row" id="display-box">
+               <div class="col-lg-7 col-md-6 col-sm-12">
+                   <h2 id="display-msg">Thank you for showing your intrest</h2>
+                   <p id="display-msg-para">Please Log in to continue with your application process</p>
+                   <a href="sign/index.html" class="btn  shadow head-btn1" style="border-radius:8px;padding-top: 17px;padding-bottom: 17px; margin-bottom: 50px;margin-top: 20px;">LOG IN</a>
+               </div>
+               <div class="col-lg-5 col-md-6 col-sm-12">
+                <div >
+                    <img src="assets/img/background/thx.svg" style="width:100%;" alt="" >
+                 </div>
+               </div>
             </div>
         </div>
-        <div class="container" style="height: 200px;">
-
-        </div>
-        <!-- slider Area End-->
-        <!-- Our Services Start -->
-        
-        <!-- How  Apply Process End-->
-        <!-- Testimonial Start -->
-       
-        <!-- Testimonial End -->
-         <!-- Support Company Start-->
-
     </main>
     <footer>
         <!-- Footer Start-->
@@ -210,6 +135,7 @@
                                 <div class="footer-pera footer-pera2">
                                  <p>subscribe to get weekly updates and special deals only available via email.</p>
                              </div>
+                             <!-- Form -->
                              <div class="footer-form" >
                                 <div id="mc_embed_signup">
                                     <form class="subscribe_form relative mail_part">
@@ -217,7 +143,7 @@
                                         class="placeholder hide-on-focus" >
                                         <div class="form-icon">
                                             <button type="submit" name="submit" id="newsletter-submit"
-                                            class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/expressmail.svg" alt=""></button>
+                                            class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/form.png" alt=""></button>
                                         </div>
                                         <div class="mt-10 info"></div>
                                     </form>
